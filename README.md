@@ -100,5 +100,11 @@ KodiBrainFuck can link files together in order to keep your code organized by, f
 ## Comments
 As macros will end up taking up characters you would traditionally use as comments in brainfuck, KodiBrainFuck supports its own comment syntax. To create a comment, simply surround some text in `/`, for instance, `/This comment will not appear in the compiled output/`.
 
+# TODO
+[] Memory efficient print function
+[] Optimisations for string literals
+[] General compiler optimisations
+[] More example scripts
+
 # Third party code
 [Brainfuck interpreter in python by pocmo](https://github.com/pocmo/Python-Brainfuck)
