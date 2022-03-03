@@ -1,0 +1,12 @@
+/The following kbf script will simply print out some text, it will showcase a few of the features of kbf/
+=p:[.[-]>]= /prints out the current character then clears it/
+
+"Hello World!
+"p
+ {12:<} /Move back to the start of memory using a loop/
+"KodiBrainFuck can make writing brainfuck fun!
+"p
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< /You can also just type regular brainfuck, you don't have to use all these gimmicks/
+"This way you can focus on the fun part:
+figuring out how to work around its limits!"
+p
