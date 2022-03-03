@@ -27,6 +27,7 @@ Hello World!
 ## Compiling a kbf program
 KodiBrainFuck can be **compiled** to standard brainfuck that can then be interpreted by any brainfuck interpreter.
 The flag `-o OUT` allows you to specify an output file. This will not run the program.
+
 The flag `-s` will output the compiled brainfuck to stdout.
 ```sh
 $ kbf.py -e '"Hello World!"[.>]' -s
@@ -51,6 +52,7 @@ $ kbf.py -e '"h"'' -s
 [-]++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++><
 ```
 Notice the `[-]` at the start which will clear the memory at that location and the `<` at the end which ensures that the pointer returns to its initial location
+
 If you would like to navigate back to the end of the string, **loops** can be used
 ```
 $ kbf.py -e '"A rather long string of text"{25:>}.' -s
@@ -76,6 +78,7 @@ $ kbf.py -e '"A rather long string of text"{25:>}.' -s
 >>>>.
 ```
 More information on loops is available below
+
 Since the string allocation loads the entire string into memory, it can be impractical for simply printing out some text for the user to read. There is not yet a solution for this, however it is in the works as of writing.
 
 ## Loops
@@ -102,8 +105,11 @@ As macros will end up taking up characters you would traditionally use as commen
 
 # TODO
 [] Memory efficient print function
+
 [] Optimisations for string literals
+
 [] General compiler optimisations
+
 [] More example scripts
 
 # Third party code
