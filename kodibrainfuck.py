@@ -67,6 +67,8 @@ def _compile(inp):
             else:
                 print(bcolors.FAIL + "Compilation error! " + bcolors.ENDC + f"File '{file}' does not exist!")
                 exit(1)
+        elif char == "/":
+            codePt += _readUntil("/", "∆", inp, codePt)[1]
         elif char in macros.keys():
             output += macros[char]
         else:    
